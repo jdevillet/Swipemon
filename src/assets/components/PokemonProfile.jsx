@@ -12,12 +12,15 @@ const PokemonProfile = () => {
   return (
     <div className="pokemon">
       <img
+        className="lg:min-h-60 min-h-40"
         src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
           currentPokemon.url.split("/")[6]
         }.png`}
         alt={currentPokemon.name}
       />
-      <p className="capitalize">{currentPokemon.name}</p>
+      <p className="capitalize font-bold my-2 text-2xl">
+        {currentPokemon.name}
+      </p>
     </div>
   );
 };

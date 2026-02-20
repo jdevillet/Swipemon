@@ -38,7 +38,7 @@ export const PokemonProvider = ({ children }) => {
       try {
         setIsLoading(true);
         const res = await axios.get(
-          "https://pokeapi.co/api/v2/pokemon?limit=12",
+          "https://pokeapi.co/api/v2/pokemon?limit=50",
         );
         setAllPokemon(res.data.results);
       } catch {

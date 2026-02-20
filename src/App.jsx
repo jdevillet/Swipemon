@@ -5,7 +5,7 @@ import { PokemonProvider } from "./assets/context/PokemonContext";
 
 const App = () => {
   return (
-    <>
+    <div className="app-content flex flex-col items-center">
       <PokemonProvider>
         <Header />
         <PokeCard />
@@ -17,7 +17,7 @@ const App = () => {
           Free SVG Backgrounds and Patterns by SVGBackgrounds.com
         </a>
       </PokemonProvider>
-    </>
+    </div>
   );
 };
 

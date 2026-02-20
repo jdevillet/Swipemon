@@ -16,8 +16,11 @@ const LikedDisplay = () => {
   };
 
   return (
-    <div className="liked-container">
-      <ul>
+    <div className="liked-container flex justify-center bg-white max-w-1/2 w-full max-h-70 mt-6 mx-2 rounded-2xl">
+      <ul
+        className="flex flex-wrap justify-center overflow-auto py-10
+"
+      >
         {likedPokemon && likedPokemon.length > 0 ? (
           likedPokemon.map((pokemon) => {
             const id = pokemon.id || pokemon.url?.split("/")[6];
